@@ -29,6 +29,9 @@ contract SimpleStorage {
     }
 
 
+    // Calldata, Memory, Storage
+    // calldata and memory means that this variable _name is going to exist temporary
+    // memory can be manipulated but calldata cannot
     function addPerson(string memory _name , uint256 _favoriteNumber ) public {
         people.push(Person({ favoriteNumber: _favoriteNumber, name: _name}));
     }
